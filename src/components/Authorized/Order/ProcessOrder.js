@@ -12,7 +12,6 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import PaidIcon from '@mui/icons-material/Paid';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';

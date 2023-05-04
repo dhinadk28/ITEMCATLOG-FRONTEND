@@ -363,6 +363,7 @@ const AddNewProduct = () => {
             {images.length>0?
               <Box className='galleryback'>
                 {images.map((image,index)=>(
+                  // eslint-disable-next-line jsx-a11y/img-redundant-alt
                   <img key={index} src={image} alt='product image' style={{maxWidth:90, maxHeight:80, padding:'0 5px'}} />
                 ))}
               </Box>

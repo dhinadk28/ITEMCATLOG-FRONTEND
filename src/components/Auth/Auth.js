@@ -5,6 +5,7 @@ import { useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+// eslint-disable-next-line no-unused-vars
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 

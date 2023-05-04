@@ -8,7 +8,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
 
-import {Box, Typography, TextField, Button, TextareaAutosize, Grid, Avatar} from '@mui/material';
+import {Box, Typography, TextField, Button, TextareaAutosize, Grid} from '@mui/material';
 
 const Shipping = () => {
     const dispatch=useDispatch();

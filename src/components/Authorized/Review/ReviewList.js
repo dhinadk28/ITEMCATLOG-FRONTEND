@@ -24,6 +24,7 @@ const ReviewList = () => {
         renderCell:(params)=>{
             return (
                 params.value===''?'':
+                // eslint-disable-next-line jsx-a11y/alt-text
                 <img src={params.value} height='100%'/>
             )
         }},

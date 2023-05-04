@@ -1,6 +1,6 @@
 
 import {useSelector} from 'react-redux';
-import {useNavigate, Outlet, Navigate} from 'react-router-dom';
+import {Outlet, Navigate} from 'react-router-dom';
 
 import {selectLoggedInUser} from '../../redux/features/authSlice';
 import jwtDecode from 'jwt-decode';
@@ -12,7 +12,6 @@ import './Authorized.css';
 import DrawerTreeMenu from './Menus/DrawerTreeMenu';
 
 const AuthorizedRoute = () => {
-    const navigate=useNavigate();
     const {accessToken}=useSelector(selectLoggedInUser);
     let role;
     const {UserInfo}=jwtDecode(accessToken);

@@ -203,8 +203,10 @@ const UpdateStore = () => {
                 <Grid item xs>
                   <Avatar sx={{m:1,bgcolor:'primary.main', height:'80px',width:'80px',fontSize:'5.35rem'}}>
                     {previewLogo===''? 
+                      // eslint-disable-next-line jsx-a11y/alt-text
                       <img src={IMAGE_BASEURL+logo} style={{height:'80px',width:'80px', borderRadius:'50%'}}/>
                       :
+                      // eslint-disable-next-line jsx-a11y/alt-text
                       <img src={previewLogo} style={{height:'80px',width:'80px', borderRadius:'50%'}}/>
                     }
                   </Avatar>

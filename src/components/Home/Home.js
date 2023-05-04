@@ -51,7 +51,7 @@ const Home = () => {
         }
         getProducts();
       }
-    }, [categories,catProductsLoading]);
+    }, [categories, catProductsLoading, categoryProducts]);
     
     
   return (

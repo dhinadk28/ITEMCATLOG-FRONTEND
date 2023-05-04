@@ -195,6 +195,7 @@ const AddNewStore = () => {
                     {!previewLogo? 
                       <InsertPhotoRoundedIcon sx={{height:'60px',width:'60px'}}/>
                       :
+                      // eslint-disable-next-line jsx-a11y/alt-text
                       <img src={previewLogo} style={{height:'80px',width:'80px', borderRadius:'50%'}}/>
                     }
                   </Avatar>

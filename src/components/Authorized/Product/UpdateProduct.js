@@ -8,7 +8,6 @@ import {Box, Typography, TextField, Button, TextareaAutosize, Grid,  MenuItem, F
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import {styled} from '@mui/material/styles';
 import UpdateIcon from '@mui/icons-material/Update';
-import PhotoIcon from '@mui/icons-material/Photo';
 import CollectionsIcon from '@mui/icons-material/Collections';
 
 import {getCategories,selectAllCategories} from '../../../redux/features/categorySlice';
@@ -360,10 +359,12 @@ const UpdateProduct = () => {
               <Box className='galleryback'>
                 {images.map((image,index)=>(
                   image.url?
+                  // eslint-disable-next-line jsx-a11y/img-redundant-alt
                   <img key={index} src={IMAGE_BASEURL+image.url} 
                                     alt='product image' 
                                     style={{maxWidth:90, maxHeight:80, padding:'0 5px'}} />
                   :
+                  // eslint-disable-next-line jsx-a11y/img-redundant-alt
                   <img key={index} src={image} alt='product image' 
                                     style={{maxWidth:90, maxHeight:80, padding:'0 5px'}} />
                 ))

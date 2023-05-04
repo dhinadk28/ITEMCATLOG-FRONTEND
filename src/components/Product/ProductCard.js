@@ -60,6 +60,7 @@ const ProductCard = React.forwardRef(({product},ref) => {
     
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getExist=()=>{
     if(products){
       const e=products.some(p=>p._id===product._id);
@@ -70,7 +71,7 @@ const ProductCard = React.forwardRef(({product},ref) => {
   }
   useEffect(() => {
     getExist();
-  }, [])
+  }, [getExist])
   const navigate=useNavigate();
   const linkToDetails=()=>{navigate(`/product/${product._id}`);}
   

@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk} from '@reduxjs/toolkit';
-import {axiosPublic} from '../axiosPublic';
 import axiosPrivate from '../axiosPrivate';
 
 export const addStore=createAsyncThunk('store/addStore',async({formData,toast},{rejectWithValue})=>{

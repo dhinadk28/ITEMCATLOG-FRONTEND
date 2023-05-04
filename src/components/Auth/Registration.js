@@ -3,7 +3,7 @@ import { useDispatch} from 'react-redux';
 import {toast} from 'react-toastify';
 import { registration } from '../../redux/features/authSlice';
 
-import {Box, Avatar, Typography, TextField, Button, Grid, FormGroup, FormControlLabel, Checkbox, Link} from '@mui/material';
+import {Box, Avatar, Typography, TextField, Button, Grid, FormGroup, FormControlLabel, Checkbox} from '@mui/material';
 import NoAccountsIcon from '@mui/icons-material/NoAccounts';
 import AccountCircleIcon from'@mui/icons-material/AccountCircle';
 import PhotoIcon from'@mui/icons-material/Photo'
@@ -13,7 +13,7 @@ const Registration = () => {
     const [name, setName]=useState('');
     const [email, setEmail]=useState('');
     const [password, setPassword]=useState('');
-    const [checked, setChecked]=useState(false);
+    const [checked]=useState(false);
 
     const [previewAvatar,setPreviewAvatar]=useState('');
     const [avatar,setAvatar]=useState('');

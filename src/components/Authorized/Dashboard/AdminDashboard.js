@@ -8,7 +8,6 @@ import {getAllOrders,selectAllOrders} from '../../../redux/features/orderSlice';
 import {getStores,selectAllStores} from '../../../redux/features/storeSlice';
 
 import {Doughnut,Line} from 'react-chartjs-2';
-import chart from 'chart.js/auto';
 
 
 const AdminDashboard = () => {
@@ -22,6 +21,7 @@ const AdminDashboard = () => {
     const outOfStock=0;
     products && products.forEach((item)=>{
         if(item.stock===0){
+            // eslint-disable-next-line no-const-assign
             outOfStock+=1;
         }
     })
